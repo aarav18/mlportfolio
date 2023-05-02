@@ -116,7 +116,11 @@
                         <p>
                             I used the PyTorch framework to build an RL model for a Snake game created with Pygame. I implemented a deep Q-learning neural network to
                             control the agent's actions. The Q-value was updated according to the
-                            <a class="project-link" href="https://en.wikipedia.org/wiki/Bellman_equation" target="_blank" >Bellman Equation</a>.
+                            <a class="project-link" href="https://en.wikipedia.org/wiki/Bellman_equation" target="_blank" >Bellman Equation</a>. I also experimented
+                            with hyperparameter optimization, specifically using Matplotlib to determine optimal values for the learning rate (&#945;) and discount
+                            rate (&#947;). Finding a balance between
+                            <a class="project-link" href="https://en.wikipedia.org/wiki/Multi-armed_bandit" target="_blank">exploration and exploitation</a>
+                            for the agent was challenging.
                         </p>
                         <a class="project-link" href="https://github.com/aarav18/snake-rl" target="_blank">View Project</a>
                     </div>
@@ -133,9 +137,11 @@
                     <div class="project-info">
                         <h3>Mario</h3>
                         <p>
-                            I used the OpenAI Gym framework to write an RL model for Mario. I implemented a deep Convolutional Neural Network (CNN) using
-                            Stable Baselines, which trained an agent on the problem. The model was incorporated in a Proximal Policy Optimization (PPO)
-                            algorithm which stabilized changes to the agent's behavior.
+                            I used the OpenAI Gym framework to write an RL model for Mario. I preprocessed the environment by using grayscaling (to simplify the
+                            input structure) and framestacking (to introduce an element of "memory" for the agent). I implemented a deep Convolutional Neural Network
+                            (CNN) using Stable Baselines, which trained an agent on the problem. For training, I wrote a custom callback class to generate
+                            detailed logs, which can be used for metric tracking. The model was incorporated in a Proximal Policy Optimization (PPO) algorithm which
+                            stabilized changes to the agent's behavior.
                         </p>
                         <a class="project-link" href="https://github.com/aarav18/mario-rl" target="_blank">View Project</a>
                     </div>
