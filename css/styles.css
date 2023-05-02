@@ -572,7 +572,6 @@ footer {
     text-decoration: none;
 }
 
-
 .project-info {
     position: absolute;
     top: 50%;
@@ -863,7 +862,7 @@ footer {
     }
 
     .project-image {
-        display: none
+        display: none;
     }
 
     .project-info {
